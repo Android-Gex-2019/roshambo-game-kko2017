@@ -1,0 +1,19 @@
+<!--file: strings.xml-->
+<!--author: KwangEun Oh-->
+<!--date: Mar. 5, 2019-->
+<!--Type: Assignment2 (RoShamBo Game) -->
+<resources>
+    <string name="app_name">RoShamBo</string>
+    <string name="rock_btn_description">User selects the rock</string>
+    <string name="paper_btn_description">User selects the paper</string>
+    <string name="scissor_btn_description">User selects the scissor</string>
+    <string name="myMove_description">My move is displayed</string>
+    <string name="gamesMove_description">Games move is displayed</string>
+    <string name="myMove_label">My Move</string>
+    <string name="gamesMove_label">Games Move</string>
+    <string name="result_description">It displays whether you win the game.</string>
+    <string name="result_label">WIN/LOSE/DRAW</string>
+    <string name="win">WIN</string>
+    <string name="lose">LOSE</string>
+    <string name="draw">DRAW</string>
+</resources>

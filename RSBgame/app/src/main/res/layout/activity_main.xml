@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--file: activity_main.xml-->
+<!--author: KwangEun Oh-->
+<!--date: Mar. 5, 2019-->
+<!--Type: Assignment2 (RoShamBo Game) -->
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/rock_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/rock_btn_description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rock_button"
+        android:onClick="onImageButtonClicked"/>
+
+    <ImageButton
+        android:id="@+id/paper_button"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/paper_btn_description"
+        app:layout_constraintEnd_toStartOf="@+id/scissor_button"
+        app:layout_constraintStart_toEndOf="@+id/rock_button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/paper_button"
+        android:onClick="onImageButtonClicked"/>
+
+    <ImageButton
+        android:id="@+id/scissor_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:contentDescription="@string/scissor_btn_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/scissor_button"
+        android:onClick="onImageButtonClicked"/>
+
+    <ImageView
+        android:id="@+id/myMove_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/myMove_description"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/none" />
+
+    <ImageView
+        android:id="@+id/gamesMove_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:contentDescription="@string/gamesMove_description"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/none" />
+
+    <TextView
+        android:id="@+id/myMove_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/myMove_label"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/myMove_image"
+        app:layout_constraintStart_toStartOf="@+id/myMove_image"
+        app:layout_constraintTop_toBottomOf="@+id/myMove_image" />
+
+    <TextView
+        android:id="@+id/gamesMove_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/gamesMove_label"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/gamesMove_image"
+        app:layout_constraintStart_toStartOf="@+id/gamesMove_image"
+        app:layout_constraintTop_toBottomOf="@+id/gamesMove_image" />
+
+    <TextView
+        android:id="@+id/result_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="60dp"
+        android:contentDescription="@string/result_description"
+        android:text="@string/result_label"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
